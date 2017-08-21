@@ -1,0 +1,22 @@
+{
+    "name": "Bg clicker",
+    "description": "Bg clicker",
+    "version": "1",
+    "content_scripts": [{
+            "matches": [
+                "https://www.banggood.com/*/*"
+                ],
+            "js": ["bg-click.js"]
+        }],
+    "permissions": [
+        "https://www.banggood.com/*/*"
+        ],
+    "browser_action": {
+        "default_title": "Bg clicker",
+        "default_icon": "icon.png"
+    },
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
